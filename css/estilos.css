@@ -1,0 +1,55 @@
+.calc{  
+      text-align: center; 
+      display: block;
+      margin: 1rem;
+      padding: 1rem;
+      border: 2px;
+}
+
+.txt{    
+    font-weight:32px;
+    font-size: 32px;
+  }
+
+.boton_C{    
+    width: 94px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 2px;   
+    color: black;
+    background-color: #DCDCDC; 
+}
+  .boton_C:hover{
+    color: #DCDCDC;
+    background-color: #F08080;
+    text-decoration: none; 
+}
+
+.boton_E{    
+    width: 94px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 2px;   
+    color: black;
+    background-color: #FFFFF0;
+  }
+  .boton_E:hover{
+    color: #FFFFF0;
+    background-color: #DCDCDC;
+    text-decoration: none; 
+  }
+
+.boton_D{   
+    width: 94px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 2px; 
+    color: black;
+    background-color: #4169E1;
+  }
+  .boton_D:hover{
+    color: #4169E1;
+    background-color: #DCDCDC;
+    text-decoration: none; 
+}
+

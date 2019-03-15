@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="logica/operaciones.js"></script>
+
+</head>
+
+<body>
+
+    <div class="calc">
+    <form name="calcular" class="form_calculadora">
+    <h2>CALCULADORA</h2>
+    <input type="textfield" class="txt" name="mostrar" id="valores" value="" disabled>
+    <p>
+
+    <table  align="center">
+
+    <tr>
+    <th><input type="reset" class="boton_C" value="E"></th>
+    <th><input type="button" class="boton_C" value="<-" onclick="eliminar_Ultimo()"></th>
+    <th><input type="reset" class="boton_C" value="D"></th>
+    <th><input type="button" class="boton_C" value="/" onClick="document.calcular.mostrar.value+='/'"></th>
+    </tr>
+
+    <tr>
+    <th><input type="button" class="boton_E" value="1" onClick="document.calcular.mostrar.value+='1'"></th>
+    <th><input type="button" class="boton_E" value="2" onClick="document.calcular.mostrar.value+='2'"></th>
+    <th><input type="button" class="boton_E" value="3" onClick="document.calcular.mostrar.value+='3'"></th>
+    <th><input type="button" class="boton_C" value="*" onClick="document.calcular.mostrar.value+='*'"></th>
+    </tr>
+
+    <th><input type="button" class="boton_E" value="4" onClick="document.calcular.mostrar.value+='4'"></th>
+    <th><input type="button" class="boton_E" value="5" onClick="document.calcular.mostrar.value+='5'"></th>
+    <th><input type="button" class="boton_E" value="6" onClick="document.calcular.mostrar.value+='6'"></th>
+    <th><input type="button" class="boton_C" value="-" onClick="document.calcular.mostrar.value+='-'"></th>
+    <tr>
+
+    <th><input type="button" class="boton_E" value="7" onClick="document.calcular.mostrar.value+='7'"></th>
+    <th><input type="button" class="boton_E" value="8" onClick="document.calcular.mostrar.value+='8'"></th>
+    <th><input type="button" class="boton_E" value="9" onClick="document.calcular.mostrar.value+='9'"></th>
+    <th><input type="button" class="boton_C" value="+" onClick="document.calcular.mostrar.value+='+'"></th>
+    <tr>
+        
+    <th><input type="button" class="boton_E " value="." onClick="document.calcular.mostrar.value+='+'"></th>
+    <th><input type="button" class="boton_E" value="0" onClick="document.calcular.mostrar.value+='0'"></th>
+    <th><input type="button" class="boton_E" value="," onClick="document.calcular.mostrar.value+=','"></th>
+    <th><input type="button" class="boton_D" value="=" onClick="document.calcular.mostrar.value=eval(document.calcular.mostrar.value)"></th>
+    </table>
+    </form> 
+    </div>
+</body>
+</html>
